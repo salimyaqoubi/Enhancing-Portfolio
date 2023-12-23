@@ -1,0 +1,27 @@
+/* Mixin for desktop navigation */
+@mixin desktop-nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+  
+  /* Mixin for navigation links */
+  @mixin nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+    
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      text-decoration-color: white;
+  
+      &:hover {
+        color: $secondary-color;
+        text-decoration: underline;
+        text-underline-offset: 1rem;
+        text-decoration-color: $border-color;
+      }
+    }
+  }
+  
